@@ -1,0 +1,74 @@
+{
+    "name":"cluster2",
+    "products":[
+        {
+            "item_ids":[
+                "20190320_073446_103c"
+            ],
+            "item_type":"PSScene",
+            "product_bundle":"visual"
+        }
+    ],
+    "tools":[
+        {
+            "reproject":{
+                "projection": "EPSG:32736",
+                "resolution": 2,
+                "kernel": "near"
+            }
+        },
+        {
+            "clip":{
+                "aoi":{
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                32.287181,
+                                -26.079742
+                            ],
+                            [
+                                32.279176,
+                                -26.080607
+                            ],
+                            [
+                                32.27098,
+                                -26.080566
+                            ],
+                            [
+                                32.27102,
+                                -26.074064
+                            ],
+                            [
+                                32.279053,
+                                -26.067785
+                            ],
+                            [
+                                32.283254,
+                                -26.067806
+                            ],
+                            [
+                                32.287198,
+                                -26.076851
+                            ],
+                            [
+                                32.287181,
+                                -26.079742
+                            ]
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "tile":{
+                "origin_x": 427200.000,
+                "origin_y": 7145600.000,
+                "pixel_size": 2,
+                "tile_size": 50,
+                "name_template": "{tilex}_{tiley}.tif",
+                "conformal_x_scaling": false
+            }
+        }
+    ] 
+}

@@ -1,0 +1,71 @@
+{
+    "name":"cluster2",
+    "products":[
+        {
+            "item_ids":[
+                "2230830_3627012_2019-03-25_1020", "2230931_3627012_2019-03-25_1014"
+            ],
+            "item_type":"PSOrthoTile",
+            "product_bundle":"visual"
+        }
+    ],
+    "tools":[
+        {
+            "composite":{
+
+            }
+        },
+        {
+            "reproject":{
+                "projection": "EPSG:32736",
+                "resolution": 2,
+                "kernel": "near"
+            }
+        },
+        {
+            "clip":{
+                "aoi":{
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                32.387776,
+                                -26.116323
+                            ],
+                            [
+                                32.387801,
+                                -26.111627
+                            ],
+                            [
+                                32.393,
+                                -26.111649
+                            ],
+                            [
+                                32.393997,
+                                -26.112553
+                            ],
+                            [
+                                32.393977,
+                                -26.116349
+                            ],
+                            [
+                                32.387776,
+                                -26.116323
+                            ]
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "tile":{
+                "origin_x": 427200.000,
+                "origin_y": 7145600.000,
+                "pixel_size": 2,
+                "tile_size": 50,
+                "name_template": "{tilex}_{tiley}.tif",
+                "conformal_x_scaling": false
+            }
+        }
+    ] 
+}

@@ -1,0 +1,1 @@
+directory where the processed context images will go

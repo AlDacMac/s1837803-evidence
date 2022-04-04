@@ -1,0 +1,1 @@
+directory for raw planet imagery when downloaded

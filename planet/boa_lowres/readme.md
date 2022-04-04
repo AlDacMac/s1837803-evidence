@@ -1,0 +1,1 @@
+directory where the processed 100x100m images go

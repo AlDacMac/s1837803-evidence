@@ -1,0 +1,70 @@
+{
+    "name":"cluster10",
+    "products":[
+        {
+            "item_ids":[
+                "20190325_092435_05_106d"
+            ],
+            "item_type":"PSScene",
+            "product_bundle":"visual"
+        }
+    ],
+    "tools":[
+        {
+            "reproject":{
+                "projection": "EPSG:32736",
+                "resolution": 2,
+                "kernel": "near"
+            }
+        },
+        {
+            "clip":{
+                "aoi":{
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                32.288619,
+                                -26.007334
+                            ],
+                            [
+                                32.288601,
+                                -26.010225
+                            ],
+                            [
+                                32.284402,
+                                -26.010204
+                            ],
+                            [
+                                32.283407,
+                                -26.009294
+                            ],
+                            [
+                                32.283425,
+                                -26.006403
+                            ],
+                            [
+                                32.287624,
+                                -26.006424
+                            ],
+                            [
+                                32.288619,
+                                -26.007334
+                            ]
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "tile":{
+                "origin_x": 427200.000,
+                "origin_y": 7145600.000,
+                "pixel_size": 2,
+                "tile_size": 50,
+                "name_template": "{tilex}_{tiley}.tif",
+                "conformal_x_scaling": false
+            }
+        }
+    ] 
+}

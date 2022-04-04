@@ -1,0 +1,70 @@
+{
+    "name":"cluster3",
+    "products":[
+        {
+            "item_ids":[
+                "2283645_3627012_2019-04-14_103b"
+            ],
+            "item_type":"PSOrthoTile",
+            "product_bundle":"visual"
+        }
+    ],
+    "tools":[
+        {
+            "reproject":{
+                "projection": "EPSG:32736",
+                "resolution": 2,
+                "kernel": "near"
+            }
+        },
+        {
+            "clip":{
+                "aoi":{
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                32.344903,
+                                -26.128593
+                            ],
+                            [
+                                32.345895,
+                                -26.129502
+                            ],
+                            [
+                                32.345879,
+                                -26.132393
+                            ],
+                            [
+                                32.344877,
+                                -26.133289
+                            ],
+                            [
+                                32.340673,
+                                -26.13327
+                            ],
+                            [
+                                32.3407,
+                                -26.128574
+                            ],
+                            [
+                                32.344903,
+                                -26.128593
+                            ]
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "tile":{
+                "origin_x": 427200.000,
+                "origin_y": 7145600.000,
+                "pixel_size": 2,
+                "tile_size": 50,
+                "name_template": "{tilex}_{tiley}.tif",
+                "conformal_x_scaling": false
+            }
+        }
+    ] 
+}

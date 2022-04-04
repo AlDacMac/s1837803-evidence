@@ -1,0 +1,75 @@
+{
+    "name":"cluster8",
+    "products":[
+        {
+            "item_ids":[
+                "20190318_092426_93_1063", "20190318_092424_87_1063"
+            ],
+            "item_type":"PSScene",
+            "product_bundle":"visual"
+        }
+    ],
+    "tools":[
+        {
+            "composite":{
+
+            }
+        },
+        {
+            "reproject":{
+                "projection": "EPSG:32736",
+                "resolution": 2,
+                "kernel": "near"
+            }
+        },
+        {
+            "clip":{
+                "aoi":{
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                32.382414,
+                                -25.8409
+                            ],
+                            [
+                                32.37922,
+                                -25.840886
+                            ],
+                            [
+                                32.372241,
+                                -25.839951
+                            ],
+                            [
+                                32.370252,
+                                -25.839042
+                            ],
+                            [
+                                32.370306,
+                                -25.828926
+                            ],
+                            [
+                                32.382476,
+                                -25.828978
+                            ],
+                            [
+                                32.382414,
+                                -25.8409
+                            ]
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "tile":{
+                "origin_x": 427200.000,
+                "origin_y": 7145600.000,
+                "pixel_size": 2,
+                "tile_size": 50,
+                "name_template": "{tilex}_{tiley}.tif",
+                "conformal_x_scaling": false
+            }
+        }
+    ] 
+}
