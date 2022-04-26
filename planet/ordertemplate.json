@@ -1,0 +1,42 @@
+{
+    "name": <Set name however you wish, but use standdard prefix e.g. 'cluster0, cluster1'>,
+    "products":[
+        {
+            "item_ids":[
+                <Copy item IDs from planet explorer>
+            ],
+            "item_type":"PSScene",
+            "product_bundle":"visual"
+        }
+    ],
+    "tools":[
+        {
+            "composite":{
+                <remove if you are only downloading one item>
+            }
+        },
+        {
+            "reproject":{
+                "projection": "EPSG:32736",
+                "resolution": 2,
+                "kernel": "near"
+            }
+        },
+        {
+            "clip":{
+                "aoi": <Copy the whole contents of polygon.geojson from the appropriate cluster directory>
+            }
+        },
+        {
+            "tile":{
+                "origin_x": , <Set as appropriate - origin x and origin y can be found by calling
+                gdalinfo on images on the x and y origin lines>
+                "origin_y": ,
+                "pixel_size": 2,
+                "tile_size": 50,
+                "name_template": "{tilex}_{tiley}.tif",
+                "conformal_x_scaling": false
+            }
+        }
+    ] 
+}

@@ -1,0 +1,33 @@
+channels:
+  - pytorch
+  - fastai
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - keras
+  - keras-gpu
+  - cudatoolkit
+  - conda-forge::gdal
+  - geotiff
+  - matplotlib
+  - numpy
+  - openjpeg
+  - pandas
+  - pillow
+  - python=3
+  - pytorch=1
+  - scikit-image=0.17
+  - scikit-learn=0.24
+  - scipy=1.5
+  - tifffile
+  - torchvision=0.8
+  - tqdm=4
+  - yaml=0.2
+  - osgeo
+  - geojson
+  - planet
+  - requests
+  - pip:
+    - fastai
+    - forestci==0.5.1
